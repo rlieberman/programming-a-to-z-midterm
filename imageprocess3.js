@@ -4,7 +4,7 @@ var canvas;
 var w; //set the width and height of the canvas in the browser and offscreen canvas for accessing pixels
 var h;
 
-var tileSize = 5; //size of our tiles, eventually will be dynamically controlled by a slider or form
+var tileSize = 50; //size of our tiles, eventually will be dynamically controlled by a slider or form
 var colNum; //variables to hold column and row numbers
 var rowNum;
 
@@ -63,9 +63,9 @@ function setup() {
 //STEP 2: for every square in our grid, we're going to create an image tile from our DOM elements and draw it to the on screen canvas
  if (imgsLoaded = true) {
   var i = 0; //variable to keep track of what image we're on in the array of images
-  for (var x =0; x < colNum; x++) { //for every column
-    for (var y =0; y < rowNum; y++) { //for every row
-      processImage(imgElements[i], x, y); //created this function because of the callbacks in a loop problem -- to revisit later
+  for (var x =0; x < colNum; x++) { //for every column, for every row
+    for (var y =0; y < rowNum; y++) { 
+      processImage(imgElements[i], x, y); 
       i++;  //go to the next image in the array
       if (i === imgElements.length) { 
         i = 0;
