@@ -36,7 +36,7 @@ function imageSearch(){
  //this loop will first make us 10 different urls and then call loadJSON 10 times
  // //startNum will increment by 10 each time
 
-  for (var i=0; i<10; i++) { 
+  for (var i=0; i<2; i++) { 
     var query = "https://www.googleapis.com/customsearch/v1?key=" + my_key + "&searchType=image&imgSize=large&imgType=photo" +  "&cx=017113430126644414771:wwhvz3sxr2q" + "&q=" + searchTerm  + "&num=10&start=" + startNum + "&imgSize=large";
     var url = encodeURI(query); //encode url if you get multiple search terms
     // console.log(url);
