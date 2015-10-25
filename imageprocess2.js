@@ -19,6 +19,11 @@ function preload(){
     
 }
 
+<<<<<<< HEAD
+=======
+var canvas;
+
+>>>>>>> b868a4d7af7abe6da2a9a36e53bec34ea9f59a80
 function setup() {
 
   w = 400; //set w and h so our on-screen and off-screen canvases will mirror each other
@@ -81,14 +86,30 @@ function setup() {
 
 function processImage(imgElt, x, y) {
 
+<<<<<<< HEAD
     var graphics = createGraphics(w, h); //draw the graphics canvas at the same dimensions as the canvas in the browser so they mirror each other
     graphics.image(imgElt, 0, 0, graphics.width, graphics.height);
     // console.log(imgElt);
+=======
+  //function makeTile(){
+    //for every image in the array of image DOM elements
+    //first we draw the image to an offscreen canvas
+    
+    var graphics = createGraphics(w, h); //draw the graphics canvas at the same dimensions as the canvas in the browser so they mirror each other
+    graphics.image(imgElt, 0, 0, graphics.width, graphics.height);
+    console.log(imgElt);
+>>>>>>> b868a4d7af7abe6da2a9a36e53bec34ea9f59a80
 
     x = x*tileSize; //take a tile and assign it to a place in the canvas in our browser
     y = y*tileSize;
     mycopy(graphics, x, y, tileSize, tileSize, x, y, tileSize, tileSize);
 
+<<<<<<< HEAD
+=======
+
+   //}
+
+>>>>>>> b868a4d7af7abe6da2a9a36e53bec34ea9f59a80
 }
 
 
