@@ -4,7 +4,7 @@ var canvas;
 var w; //set the width and height of the canvas in the browser and offscreen canvas for accessing pixels
 var h;
 
-var tileSize = 20; //size of our tiles
+var tileSize = 5; //size of our tiles
 var colNum; //variables to hold column and row numbers
 var rowNum;
 
@@ -15,7 +15,7 @@ var imgsLoaded = false; //boolean to mark if the images are loaded as DOM elemen
 
 
 function preload(){
-  imgURLS = loadStrings('sunflowers.txt'); //for now, load image URLS from a text file so we don't overload the api
+  imgURLS = loadStrings('urls2.txt'); //for now, load image URLS from a text file so we don't overload the api
     
 }
 
