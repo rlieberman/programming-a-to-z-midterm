@@ -17,6 +17,7 @@ function preload(){
     
 }
 
+var canvas;
 
 function setup() {
 
@@ -27,7 +28,7 @@ function setup() {
   rowNum = h/tileSize;
 
 
-  var canvas = createCanvas(w,h); //onscreen canvas
+  canvas = createCanvas(w,h); //onscreen canvas
   canvas.position(20, 20); 
   devicePixelScaling(false);
   background(215);
@@ -72,12 +73,12 @@ function setup() {
 
 function processImage(imgElt, x, y) {
 
-  function makeTile(){
+  //function makeTile(){
     //for every image in the array of image DOM elements
     //first we draw the image to an offscreen canvas
     
     var graphics = createGraphics(w, h); //draw the graphics canvas at the same dimensions as the canvas in the browser so they mirror each other
-    graphics.image(imgElt.elt, 0, 0, graphics.width, graphics.height);
+    graphics.image(imgElt, 0, 0, graphics.width, graphics.height);
     console.log(imgElt);
 
     x = x*tileSize; //take a tile and assign it to a place in the canvas in our browser
@@ -85,7 +86,7 @@ function processImage(imgElt, x, y) {
     mycopy(graphics, x, y, tileSize, tileSize, x, y, tileSize, tileSize);
 
 
-   }
+   //}
 
 }
 
