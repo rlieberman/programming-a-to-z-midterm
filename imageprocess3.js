@@ -31,7 +31,7 @@ function setup() {
   canvas = createCanvas(w,h); //onscreen canvas
   canvas.position(20, 20); 
   devicePixelScaling(false);
-  background(215);
+  background(255);
 
   //set up the underlying grid and display it for now
   for (var x = 0;  x< colNum; x++) { 
